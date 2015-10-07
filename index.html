@@ -10,61 +10,77 @@
 <body>
   <div class="top-container">
     <div class="middle-container">
-
-      <div class="left column">
-        <div class="profile-pic">
-          <img alt="" class="avatar" height="230" width="230">
-        </div>
-        <h1 class="card-name">
-          <span class="fullname"></span>
-          <span class="username"></span>
-        </h1>
-        <ul class="card-details">
-          <li class=card-detail></li>
-          <li class=card-detail></li>
-        </ul>
-        <div class="card-stats">
-          <div class="card-stat"></div>
-          <div class="card-stat"></div>
-          <div class="card-stat"></div>
-        </div>
-        <div class="card-organizations">
-        </div>
-      </div>
-      <div class="right column">
-        <div class="nav-tabs">
-          <div class="nav-right">
-            <button class="edit-profile">Edit Profile<button>
+      <div class="columns">
+        <div class="left column">
+          <div class="profile-pic">
+            <img alt="" class="avatar" height="230" width="230">
           </div>
-          <nav class="tabs">
-            <a href="" class="nav-tab">Contributions</a>
-            <a href="" class="nav-tab">Repositories</a>
-            <a href="" class="nav-tab">Public activity</a>
-          </nav>
+          <h1 class="card-name">
+            <span class="fullname"></span>
+            <span class="username"></span>
+          </h1>
+          <ul class="card-details">
+          </ul>
+          <div class="card-stats">
+            <a class="card-stat" href="">
+              <strong class="card-stat-count followers"></strong>
+              <span class="text-muted">Followers</span>
+            </a>
+            <a class="card-stat" href="">
+              <strong class="card-stat-count starred"></strong>
+              <span class="text-muted">Starred</span>
+            </a>
+            <a class="card-stat" href="">
+              <strong class="card-stat-count following"></strong>
+              <span class="text-muted">Following</span>
+            </a>
+            <br style="clear: left;" />
+          </div>
+          <div class="card-organizations">
+            <h3>Organization</h3>
+          </div>
         </div>
-        <div class="tab-content">
-          <div class="repositories">
-            <div class="half">
-              <h3>Popular repositories></h3>
-              <div class="repos-container">
-                <ul class="repos-list">
-                </ul>
+        <div class="right column">
+          <div class="nav-tabs">
+            <div class="nav-right">
+              <button class="edit-profile">Edit Profile</button>
+            </div>
+            <nav class="tabs">
+              <a href="" class="nav-tab">Contributions</a>
+              <a href="" class="nav-tab">Repositories</a>
+              <a href="" class="nav-tab">Public activity</a>
+            </nav>
+          </div>
+          <div class="tab-content">
+
+            <div class="columns repositories">
+
+              <div class="column half">
+                <h3 class="section">Popular repositories</h3>
+                <div class="repos-container">
+                  <ul class="repos-list">
+                  </ul>
+                </div>
               </div>
+
+              <div class="column half">
+                <h3 class="section">Repositories contributed to</h3>
+                <div class="repos-container">
+                  <ul class="repos-list">
+                  </ul>
+                </div>
+              </div>
+
             </div>
-            <div class="half">
-              <h3>Popular repositories></h3>
-              <div class="repos-container">
-                <ul class="repos-list">
-                </ul>
+
+            <div class="contribution">
             </div>
-          </div>
-          <div class="contribution">
-          </div>
-          <div class="activity">
+            <div class="activity">
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
