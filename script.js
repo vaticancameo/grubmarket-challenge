@@ -13,11 +13,16 @@ $(function(){
     type: "GET",
     url: githubAjaxCall.githubUrl + githubAjaxCall.githubName,
     success: function(githubData) {
-      console.log(githubData);
+      populatePage(githubData);
     },
     error: function(err) {
       console.log(err);
     }
   });
+
+  function populatePage(g) {
+    $(".fullname").text(g.name);
+    $(".username").text(g.login);
+  }
 
 });
